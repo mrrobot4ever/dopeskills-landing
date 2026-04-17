@@ -67,7 +67,7 @@
     .nav .container {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
     }
     .nav-logo {
       display: flex;
@@ -80,18 +80,7 @@
       color: var(--white);
       letter-spacing: -0.5px;
     }
-    .nav-cta {
-      display: inline-block;
-      padding: 10px 24px;
-      background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
-      color: var(--white);
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: 600;
-      font-size: 14px;
-      transition: opacity 0.2s;
-    }
-    .nav-cta:hover { opacity: 0.9; }
+
 
     /* HERO */
     .hero {
@@ -108,18 +97,7 @@
     .hero-content {
       text-align: left;
     }
-    .hero-badge {
-      display: inline-block;
-      padding: 6px 16px;
-      background: var(--frost);
-      border: 1px solid var(--card-border);
-      border-radius: 100px;
-      font-size: 13px;
-      color: var(--neon-cyan);
-      font-weight: 500;
-      margin-bottom: 24px;
-      letter-spacing: 0.5px;
-    }
+
     .hero h1 {
       font-size: 44px;
       font-weight: 900;
@@ -149,16 +127,16 @@
     .btn-primary {
       display: inline-block;
       padding: 16px 36px;
-      background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
+      background: linear-gradient(135deg, #00b894, #00cec9);
       color: var(--white);
       text-decoration: none;
       border-radius: 12px;
       font-weight: 700;
       font-size: 16px;
-      box-shadow: 0 0 30px rgba(77,124,255,0.3);
+      box-shadow: 0 0 30px rgba(0,184,148,0.3);
       transition: box-shadow 0.3s, transform 0.2s;
     }
-    .btn-primary:hover { box-shadow: 0 0 50px rgba(77,124,255,0.5); transform: translateY(-2px); }
+    .btn-primary:hover { box-shadow: 0 0 50px rgba(0,184,148,0.5); transform: translateY(-2px); }
     .btn-secondary {
       display: inline-block;
       padding: 16px 36px;
@@ -525,6 +503,20 @@
       cursor: pointer;
       background: none;
       border: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .faq-section amp-accordion h4::after {
+      content: "\25BE";
+      font-size: 18px;
+      color: var(--silver);
+      transition: transform 0.2s;
+      flex-shrink: 0;
+      margin-left: 16px;
+    }
+    .faq-section amp-accordion section[expanded] h4::after {
+      transform: rotate(180deg);
     }
     .faq-section amp-accordion .faq-answer {
       padding: 0 24px 20px;
@@ -591,7 +583,7 @@
       .hero-media {
         order: 1;
       }
-      .hero-badge { display: none; }
+
       .hero h1 {
         font-size: 28px;
         margin-bottom: 12px;
@@ -636,7 +628,7 @@
       <div class="nav-logo">
         <amp-img src="logo.webp" width="200" height="182" alt="Dope Skills" layout="fixed"></amp-img>
       </div>
-      <a href="#" class="nav-cta">Join Waitlist</a>
+
     </div>
   </nav>
 
@@ -656,11 +648,10 @@
           </div>
         </div>
         <div class="hero-content">
-          <div class="hero-badge">Now Accepting Early Access Members</div>
-          <h1>Get The Skills Millionaires Are Using to <span class="highlight">PRINT</span></h1>
-          <p class="hero-sub">AI-powered automation skills that turn your ideas into revenue-generating machines. Video ads, content production, and business automation -- all running on autopilot.</p>
+<h1>Get The Skills Millionaires Are Using to <span class="highlight">PRINT</span></h1>
+          <p class="hero-sub">AI-powered automation skills that print money for your business. Video ads, content production, and business automation -- all running on autopilot.</p>
           <div class="hero-cta-group">
-            <a href="#" class="btn-primary">Join The Waitlist</a>
+            <a href="#" class="btn-primary">Get Instant Access</a>
             <a href="#pricing" class="btn-secondary">See Pricing</a>
           </div>
         </div>
@@ -857,7 +848,7 @@
             <li>New skills as they drop</li>
             <li>Cancel anytime</li>
           </ul>
-          <a href="#" class="btn-primary" style="width:100%; text-align:center;">Join Waitlist</a>
+          <a href="#" class="btn-primary" style="width:100%; text-align:center;">Get Instant Access</a>
         </div>
         <div class="price-card popular">
           <div class="popular-tag">Best Value</div>
@@ -873,7 +864,7 @@
             <li>Custom skill requests</li>
             <li>Lifetime rate guarantee</li>
           </ul>
-          <a href="#" class="btn-primary" style="width:100%; text-align:center;">Join Waitlist</a>
+          <a href="#" class="btn-primary" style="width:100%; text-align:center;">Get Instant Access</a>
         </div>
       </div>
     </div>
@@ -922,8 +913,11 @@
   <section class="final-cta">
     <div class="container">
       <h2>Stop Doing It Manually.<br>Start Printing.</h2>
-      <p>Join the waitlist and be first in line when we open the doors.</p>
-      <a href="#" class="btn-primary">Join The Waitlist Now</a>
+      <p>Get instant access and start printing today.</p>
+      <a href="#" class="btn-primary">Get Instant Access</a>
+      <div style="margin-top: 40px;">
+        <amp-img src="logo.webp" width="100" height="91" alt="Dope Skills" layout="fixed"></amp-img>
+      </div>
     </div>
   </section>
 
