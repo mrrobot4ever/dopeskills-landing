@@ -95,10 +95,18 @@
 
     /* HERO */
     .hero {
-      padding: 80px 0 60px;
-      text-align: center;
+      padding: 60px 0 60px;
       position: relative;
       overflow: hidden;
+    }
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+    .hero-content {
+      text-align: left;
     }
     .hero-badge {
       display: inline-block;
@@ -113,11 +121,11 @@
       letter-spacing: 0.5px;
     }
     .hero h1 {
-      font-size: 52px;
+      font-size: 44px;
       font-weight: 900;
       color: var(--white);
       line-height: 1.1;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
       letter-spacing: -1.5px;
     }
     .hero h1 .highlight {
@@ -127,18 +135,16 @@
       background-clip: text;
     }
     .hero-sub {
-      font-size: 18px;
+      font-size: 16px;
       color: var(--silver);
-      max-width: 600px;
-      margin: 0 auto 40px;
+      max-width: 500px;
+      margin: 0 0 32px;
       line-height: 1.7;
     }
     .hero-cta-group {
       display: flex;
       gap: 16px;
-      justify-content: center;
       flex-wrap: wrap;
-      margin-bottom: 48px;
     }
     .btn-primary {
       display: inline-block;
@@ -555,16 +561,70 @@
       color: rgba(192,199,214,0.5);
     }
 
-    /* RESPONSIVE */
+    /* RESPONSIVE - TABLET */
+    @media (max-width: 900px) {
+      .hero h1 { font-size: 36px; }
+      .hero-inner { gap: 32px; }
+    }
+
+    /* RESPONSIVE - MOBILE */
     @media (max-width: 768px) {
-      .hero h1 { font-size: 34px; }
+      .hero {
+        padding: 0;
+        min-height: calc(100vh - 77px);
+        display: flex;
+        align-items: center;
+      }
+      .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        min-height: calc(100vh - 77px);
+        padding: 16px 0;
+      }
+      .hero-content {
+        text-align: center;
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .hero-media {
+        order: 1;
+      }
+      .hero-badge { display: none; }
+      .hero h1 {
+        font-size: 28px;
+        margin-bottom: 12px;
+      }
+      .hero-sub {
+        font-size: 14px;
+        margin-bottom: 20px;
+        max-width: 100%;
+      }
+      .hero-cta-group {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+      .btn-primary, .btn-secondary {
+        padding: 14px 32px;
+        font-size: 15px;
+        width: 100%;
+        text-align: center;
+      }
+      .hero-video { border-radius: 12px; }
+      .video-placeholder { aspect-ratio: 16/9; }
+      .play-btn { width: 60px; height: 60px; }
+      .play-btn svg { width: 22px; height: 22px; }
+
       .section-title { font-size: 28px; }
       .founder-section { flex-direction: column; text-align: center; padding: 32px 24px; }
       .founder-img { width: 120px; height: 120px; font-size: 40px; }
       .proof-bar .container { gap: 32px; }
-      .hero { padding: 60px 0 40px; }
       .price-amount { font-size: 36px; }
       .final-cta h2 { font-size: 30px; }
+      .nav-logo amp-img { width: 140px; height: 127px; }
     }
   </style>
 </head>
@@ -585,17 +645,23 @@
     <div class="glow-orb glow-orb-1"></div>
     <div class="glow-orb glow-orb-2"></div>
     <div class="container">
-      <div class="hero-badge">Now Accepting Early Access Members</div>
-      <h1>Get The Skills Millionaires<br>Are Using to <span class="highlight">PRINT</span></h1>
-      <p class="hero-sub">AI-powered automation skills that turn your ideas into revenue-generating machines. Video ads, content production, and business automation -- all running on autopilot.</p>
-      <div class="hero-cta-group">
-        <a href="#" class="btn-primary">Join The Waitlist</a>
-        <a href="#pricing" class="btn-secondary">See Pricing</a>
-      </div>
-      <div class="hero-video">
-        <div class="video-placeholder">
-          <div class="play-btn">
-            <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"></polygon></svg>
+      <div class="hero-inner">
+        <div class="hero-media">
+          <div class="hero-video">
+            <div class="video-placeholder">
+              <div class="play-btn">
+                <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"></polygon></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-content">
+          <div class="hero-badge">Now Accepting Early Access Members</div>
+          <h1>Get The Skills Millionaires Are Using to <span class="highlight">PRINT</span></h1>
+          <p class="hero-sub">AI-powered automation skills that turn your ideas into revenue-generating machines. Video ads, content production, and business automation -- all running on autopilot.</p>
+          <div class="hero-cta-group">
+            <a href="#" class="btn-primary">Join The Waitlist</a>
+            <a href="#pricing" class="btn-secondary">See Pricing</a>
           </div>
         </div>
       </div>
