@@ -93,7 +93,7 @@
     }
 
     .hero h1 {
-      font-size: 44px;
+      font-size: 40px;
       font-weight: 900;
       color: var(--white);
       line-height: 1.1;
@@ -131,6 +131,26 @@
       transition: box-shadow 0.3s, transform 0.2s;
     }
     .btn-primary:hover { box-shadow: 0 0 50px rgba(0,184,148,0.5); transform: translateY(-2px); }
+    .btn-primary {
+      position: relative;
+      overflow: hidden;
+    }
+    .btn-primary::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 60%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
+      animation: shimmer 6s ease-in-out infinite;
+      animation-delay: 1s;
+    }
+    @keyframes shimmer {
+      0% { left: -100%; }
+      16% { left: 150%; }
+      100% { left: 150%; }
+    }
     .btn-secondary {
       display: inline-block;
       padding: 16px 36px;
@@ -585,7 +605,7 @@
       }
 
       .hero h1 {
-        font-size: 28px;
+        font-size: 24px;
         margin-bottom: 12px;
       }
       .hero-sub {
