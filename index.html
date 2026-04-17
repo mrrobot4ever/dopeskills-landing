@@ -1,0 +1,873 @@
+<!doctype html>
+<html amp lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <title>Dope Skills - Get The Skills Millionaires Are Using to PRINT</title>
+  <meta name="description" content="AI-powered automation skills that generate revenue while you sleep. Video ads, content production, and business automation -- all on autopilot.">
+  <link rel="canonical" href="https://dopeskills.ai/">
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;animation:none}</style></noscript>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+  <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+  <style amp-custom>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+    :root {
+      --midnight: #0a0e1a;
+      --deep-blue: #0f1629;
+      --card-bg: rgba(255,255,255,0.04);
+      --card-border: rgba(255,255,255,0.08);
+      --frost: rgba(255,255,255,0.06);
+      --silver: #c0c7d6;
+      --light: #e8ecf4;
+      --white: #ffffff;
+      --neon-blue: #4d7cff;
+      --neon-purple: #7c4dff;
+      --neon-cyan: #00d4ff;
+      --glow-blue: rgba(77,124,255,0.15);
+      --glow-purple: rgba(124,77,255,0.1);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--midnight);
+      color: var(--silver);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Ambient glow backgrounds */
+    .glow-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(120px);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .glow-orb-1 { width: 600px; height: 600px; background: var(--glow-blue); top: -200px; right: -200px; }
+    .glow-orb-2 { width: 500px; height: 500px; background: var(--glow-purple); top: 400px; left: -250px; }
+    .glow-orb-3 { width: 400px; height: 400px; background: var(--glow-blue); bottom: -100px; right: -100px; }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* NAV */
+    .nav {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--card-border);
+    }
+    .nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .nav-logo span {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--white);
+      letter-spacing: -0.5px;
+    }
+    .nav-cta {
+      display: inline-block;
+      padding: 10px 24px;
+      background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
+      color: var(--white);
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 14px;
+      transition: opacity 0.2s;
+    }
+    .nav-cta:hover { opacity: 0.9; }
+
+    /* HERO */
+    .hero {
+      padding: 80px 0 60px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-badge {
+      display: inline-block;
+      padding: 6px 16px;
+      background: var(--frost);
+      border: 1px solid var(--card-border);
+      border-radius: 100px;
+      font-size: 13px;
+      color: var(--neon-cyan);
+      font-weight: 500;
+      margin-bottom: 24px;
+      letter-spacing: 0.5px;
+    }
+    .hero h1 {
+      font-size: 52px;
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1.1;
+      margin-bottom: 24px;
+      letter-spacing: -1.5px;
+    }
+    .hero h1 .highlight {
+      background: linear-gradient(135deg, var(--neon-blue), var(--neon-cyan));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-sub {
+      font-size: 18px;
+      color: var(--silver);
+      max-width: 600px;
+      margin: 0 auto 40px;
+      line-height: 1.7;
+    }
+    .hero-cta-group {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 48px;
+    }
+    .btn-primary {
+      display: inline-block;
+      padding: 16px 36px;
+      background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
+      color: var(--white);
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 16px;
+      box-shadow: 0 0 30px rgba(77,124,255,0.3);
+      transition: box-shadow 0.3s, transform 0.2s;
+    }
+    .btn-primary:hover { box-shadow: 0 0 50px rgba(77,124,255,0.5); transform: translateY(-2px); }
+    .btn-secondary {
+      display: inline-block;
+      padding: 16px 36px;
+      background: var(--frost);
+      border: 1px solid var(--card-border);
+      color: var(--light);
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    /* Video placeholder */
+    .hero-video {
+      max-width: 800px;
+      margin: 0 auto;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--card-border);
+      background: var(--deep-blue);
+      position: relative;
+    }
+    .video-placeholder {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: linear-gradient(135deg, var(--deep-blue), #1a1f35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .play-btn {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 40px rgba(77,124,255,0.4);
+    }
+    .play-btn svg { width: 30px; height: 30px; fill: white; margin-left: 4px; }
+
+    /* SOCIAL PROOF BAR */
+    .proof-bar {
+      padding: 40px 0;
+      border-top: 1px solid var(--card-border);
+      border-bottom: 1px solid var(--card-border);
+    }
+    .proof-bar .container {
+      display: flex;
+      justify-content: center;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+    .proof-stat {
+      text-align: center;
+    }
+    .proof-stat .number {
+      font-size: 36px;
+      font-weight: 800;
+      color: var(--white);
+    }
+    .proof-stat .label {
+      font-size: 14px;
+      color: var(--silver);
+      margin-top: 4px;
+    }
+
+    /* SECTION STYLING */
+    .section {
+      padding: 80px 0;
+      position: relative;
+    }
+    .section-label {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--neon-cyan);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-size: 38px;
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.2;
+      margin-bottom: 16px;
+      letter-spacing: -1px;
+    }
+    .section-sub {
+      font-size: 17px;
+      color: var(--silver);
+      max-width: 600px;
+      line-height: 1.7;
+      margin-bottom: 48px;
+    }
+
+    /* PROBLEM SECTION */
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+    .problem-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 32px;
+      backdrop-filter: blur(10px);
+    }
+    .problem-card .icon {
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
+    .problem-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+    .problem-card p {
+      font-size: 15px;
+      color: var(--silver);
+      line-height: 1.6;
+    }
+
+    /* SKILLS GRID */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+    }
+    .skill-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 32px;
+      position: relative;
+      overflow: hidden;
+    }
+    .skill-card.featured {
+      border-color: var(--neon-blue);
+      box-shadow: 0 0 30px var(--glow-blue);
+    }
+    .skill-badge {
+      display: inline-block;
+      padding: 4px 10px;
+      background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--white);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+    }
+    .skill-card h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+    .skill-card p {
+      font-size: 15px;
+      color: var(--silver);
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .skill-features {
+      list-style: none;
+    }
+    .skill-features li {
+      font-size: 14px;
+      color: var(--silver);
+      padding: 6px 0;
+      padding-left: 24px;
+      position: relative;
+    }
+    .skill-features li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--neon-cyan);
+      font-weight: 700;
+    }
+
+    /* HOW IT WORKS */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 32px;
+    }
+    .step {
+      text-align: center;
+    }
+    .step-number {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--white);
+      margin: 0 auto 16px;
+      box-shadow: 0 0 25px var(--glow-blue);
+    }
+    .step h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+    .step p {
+      font-size: 14px;
+      color: var(--silver);
+      line-height: 1.6;
+    }
+
+    /* FOUNDER */
+    .founder-section {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 24px;
+      padding: 48px;
+      display: flex;
+      gap: 40px;
+      align-items: center;
+    }
+    .founder-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 64px;
+      font-weight: 900;
+      color: var(--white);
+    }
+    .founder-text h3 {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+    .founder-text .title {
+      font-size: 14px;
+      color: var(--neon-cyan);
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .founder-text p {
+      font-size: 16px;
+      color: var(--silver);
+      line-height: 1.7;
+    }
+
+    /* PRICING */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      max-width: 740px;
+      margin: 0 auto;
+    }
+    .price-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 40px;
+      text-align: center;
+      position: relative;
+    }
+    .price-card.popular {
+      border-color: var(--neon-blue);
+      box-shadow: 0 0 40px var(--glow-blue);
+    }
+    .popular-tag {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 4px 16px;
+      background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
+      border-radius: 100px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--white);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .price-card h3 {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+    .price-amount {
+      font-size: 48px;
+      font-weight: 900;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+    .price-period {
+      font-size: 14px;
+      color: var(--silver);
+      margin-bottom: 24px;
+    }
+    .price-savings {
+      display: inline-block;
+      padding: 4px 12px;
+      background: rgba(0,212,255,0.1);
+      border: 1px solid rgba(0,212,255,0.2);
+      border-radius: 100px;
+      font-size: 13px;
+      color: var(--neon-cyan);
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+    .price-features {
+      list-style: none;
+      text-align: left;
+      margin-bottom: 32px;
+    }
+    .price-features li {
+      font-size: 14px;
+      color: var(--silver);
+      padding: 8px 0;
+      padding-left: 24px;
+      position: relative;
+      border-bottom: 1px solid var(--card-border);
+    }
+    .price-features li:last-child { border-bottom: none; }
+    .price-features li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--neon-cyan);
+      font-weight: 700;
+    }
+
+    /* FAQ */
+    .faq-section amp-accordion {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .faq-section amp-accordion section {
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      background: var(--card-bg);
+    }
+    .faq-section amp-accordion h4 {
+      padding: 20px 24px;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--white);
+      cursor: pointer;
+      background: none;
+      border: none;
+    }
+    .faq-section amp-accordion .faq-answer {
+      padding: 0 24px 20px;
+      font-size: 15px;
+      color: var(--silver);
+      line-height: 1.7;
+    }
+
+    /* FINAL CTA */
+    .final-cta {
+      text-align: center;
+      padding: 80px 0 100px;
+    }
+    .final-cta h2 {
+      font-size: 42px;
+      font-weight: 900;
+      color: var(--white);
+      margin-bottom: 16px;
+      letter-spacing: -1px;
+    }
+    .final-cta p {
+      font-size: 18px;
+      color: var(--silver);
+      max-width: 500px;
+      margin: 0 auto 40px;
+    }
+
+    /* FOOTER */
+    .footer {
+      padding: 40px 0;
+      border-top: 1px solid var(--card-border);
+      text-align: center;
+      font-size: 14px;
+      color: rgba(192,199,214,0.5);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 34px; }
+      .section-title { font-size: 28px; }
+      .founder-section { flex-direction: column; text-align: center; padding: 32px 24px; }
+      .founder-img { width: 120px; height: 120px; font-size: 40px; }
+      .proof-bar .container { gap: 32px; }
+      .hero { padding: 60px 0 40px; }
+      .price-amount { font-size: 36px; }
+      .final-cta h2 { font-size: 30px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container">
+      <div class="nav-logo">
+        <amp-img src="logo.jpg" width="36" height="33" alt="Dope Skills" layout="fixed"></amp-img>
+        <span>Dope Skills</span>
+      </div>
+      <a href="#" class="nav-cta">Join Waitlist</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="container">
+      <div class="hero-badge">Now Accepting Early Access Members</div>
+      <h1>Get The Skills Millionaires<br>Are Using to <span class="highlight">PRINT</span></h1>
+      <p class="hero-sub">AI-powered automation skills that turn your ideas into revenue-generating machines. Video ads, content production, and business automation -- all running on autopilot.</p>
+      <div class="hero-cta-group">
+        <a href="#" class="btn-primary">Join The Waitlist</a>
+        <a href="#pricing" class="btn-secondary">See Pricing</a>
+      </div>
+      <div class="hero-video">
+        <div class="video-placeholder">
+          <div class="play-btn">
+            <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"></polygon></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF BAR -->
+  <div class="proof-bar">
+    <div class="container">
+      <div class="proof-stat">
+        <div class="number">24/7</div>
+        <div class="label">Always Running</div>
+      </div>
+      <div class="proof-stat">
+        <div class="number">10x</div>
+        <div class="label">Faster Than Manual</div>
+      </div>
+      <div class="proof-stat">
+        <div class="number">$0</div>
+        <div class="label">Employees Needed</div>
+      </div>
+      <div class="proof-stat">
+        <div class="number">100%</div>
+        <div class="label">AI-Powered</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROBLEM -->
+  <section class="section">
+    <div class="container">
+      <div class="section-label">The Problem</div>
+      <h2 class="section-title">You're Leaving Money on the Table</h2>
+      <p class="section-sub">Every hour you spend on repetitive production tasks is an hour you're not spending on strategy, sales, and scale.</p>
+      <div class="problem-grid">
+        <div class="problem-card">
+          <div class="icon">⏳</div>
+          <h3>Video Ads Take Forever</h3>
+          <p>Hiring editors, waiting for revisions, going back and forth. A single UGC ad can take days and cost hundreds. You need dozens.</p>
+        </div>
+        <div class="problem-card">
+          <div class="icon">💸</div>
+          <h3>Agencies Drain Your Budget</h3>
+          <p>Creative agencies charge $1,000+ per video. Freelancers ghost you. And neither understands your product like you do.</p>
+        </div>
+        <div class="problem-card">
+          <div class="icon">🧠</div>
+          <h3>AI Tools Are Fragmented</h3>
+          <p>You've got 15 tabs open -- one for avatars, one for B-roll, one for editing. Nothing connects. Nothing flows. Nothing scales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUTION / SKILLS -->
+  <section class="section" style="background: var(--deep-blue);">
+    <div class="container">
+      <div class="glow-orb glow-orb-3"></div>
+      <div class="section-label">The Skills</div>
+      <h2 class="section-title">One Command. Full Production.</h2>
+      <p class="section-sub">Each Dope Skill is a battle-tested automation pipeline that turns a simple input into a polished, revenue-ready output. No editing software. No technical skills. Just results.</p>
+      <div class="skills-grid">
+        <div class="skill-card featured">
+          <div class="skill-badge">Flagship Skill</div>
+          <h3>Talking Head B-Roll Video</h3>
+          <p>Drop in an audio file and an avatar image. Get back a fully produced UGC-style video ad with AI-generated split-screen B-roll, transparent avatar overlay, and synced audio.</p>
+          <ul class="skill-features">
+            <li>AI avatar lip-synced to your script</li>
+            <li>28+ unique B-roll segments auto-generated</li>
+            <li>Split-screen cinematic footage</li>
+            <li>Background removal and compositing</li>
+            <li>Speed boost and final production</li>
+            <li>Human-in-the-loop quality control</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-badge">Coming Soon</div>
+          <h3>Viral Hook Generator</h3>
+          <p>Generate 100+ scroll-stopping hooks per week from your product info. AI writes them, you pick the winners, and feed them straight into your ad pipeline.</p>
+          <ul class="skill-features">
+            <li>1,000+ hook templates built in</li>
+            <li>Product-aware generation</li>
+            <li>Zero API cost (runs locally)</li>
+            <li>Export to any ad platform</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-badge">Coming Soon</div>
+          <h3>AI Product Photo Studio</h3>
+          <p>Turn a phone photo of your product into professional e-commerce photography. Multiple angles, lifestyle shots, and platform-ready formats.</p>
+          <ul class="skill-features">
+            <li>Professional lighting and staging</li>
+            <li>Multiple background styles</li>
+            <li>Amazon, Shopify, social-ready</li>
+            <li>Batch processing</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-badge">Coming Soon</div>
+          <h3>VSL Script Writer</h3>
+          <p>Feed in your product URL and get a complete Video Sales Letter script -- structured with proven frameworks that have driven millions in revenue.</p>
+          <ul class="skill-features">
+            <li>Problem-Agitate-Solve structure</li>
+            <li>Hook + body + CTA framework</li>
+            <li>Upsell script generation</li>
+            <li>Based on $15M+ in proven scripts</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-badge">Coming Soon</div>
+          <h3>Content Repurposer</h3>
+          <p>Take one long-form video or podcast and automatically generate 20+ short-form clips optimized for TikTok, Reels, and Shorts.</p>
+          <ul class="skill-features">
+            <li>AI finds the best moments</li>
+            <li>Auto-captions and formatting</li>
+            <li>Platform-specific aspect ratios</li>
+            <li>Batch export ready</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-badge">Coming Soon</div>
+          <h3>Ad Creative A/B Engine</h3>
+          <p>Generate multiple variations of the same ad with different hooks, B-roll, and CTAs. Test 30+ creatives per week without hiring a single editor.</p>
+          <ul class="skill-features">
+            <li>Hook variation generator</li>
+            <li>Automated split testing</li>
+            <li>Performance-based iteration</li>
+            <li>Scale winning creatives instantly</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-label">How It Works</div>
+      <h2 class="section-title">Three Steps to Automation</h2>
+      <p class="section-sub">No coding. No editing software. No learning curve. Just tell your AI agent what you want and approve the results.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Install the Skill</h3>
+          <p>Drop the skill file into your AI agent's workspace. One command. Takes 10 seconds.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Provide Your Inputs</h3>
+          <p>Send your audio file, avatar image, and any product photos. The AI handles everything else.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Approve and Deploy</h3>
+          <p>Review each piece as it's generated. Approve what you like, reject what you don't. Get a final production-ready video.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDER -->
+  <section class="section" style="background: var(--deep-blue);">
+    <div class="container">
+      <div class="section-label">Meet The Founder</div>
+      <h2 class="section-title">Built by Someone Who Actually Uses This</h2>
+      <div class="founder-section">
+        <div class="founder-img">MR</div>
+        <div class="founder-text">
+          <h3>Miles Rampel</h3>
+          <div class="title">Founder, Dope Skills</div>
+          <p>Miles Rampel is one of the most prolific affiliate marketers in the world, generating millions in yearly commissions. He built Dope Skills because he was tired of paying agencies thousands of dollars for work that AI could do in minutes. Every skill in this library was born from a real production need -- tested in the trenches, refined through iteration, and proven to deliver results. These aren't theoretical tools. They're the exact automations Miles uses to run his own business.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section-label" style="text-align:center;">Pricing</div>
+      <h2 class="section-title" style="text-align:center;">Invest in Your Unfair Advantage</h2>
+      <p class="section-sub" style="text-align:center; margin-left:auto; margin-right:auto;">Less than the cost of a single freelance video edit. More powerful than an entire creative team.</p>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3>Monthly</h3>
+          <div class="price-amount">$300</div>
+          <div class="price-period">per month</div>
+          <ul class="price-features">
+            <li>All current and future skills</li>
+            <li>Private GitHub repo access</li>
+            <li>Community access</li>
+            <li>Priority support</li>
+            <li>New skills as they drop</li>
+            <li>Cancel anytime</li>
+          </ul>
+          <a href="#" class="btn-primary" style="width:100%; text-align:center;">Join Waitlist</a>
+        </div>
+        <div class="price-card popular">
+          <div class="popular-tag">Best Value</div>
+          <h3>Annual</h3>
+          <div class="price-amount">$2,000</div>
+          <div class="price-period">per year</div>
+          <div class="price-savings">Save $1,600/year</div>
+          <ul class="price-features">
+            <li>Everything in Monthly</li>
+            <li>Lock in early adopter pricing</li>
+            <li>Founding member badge</li>
+            <li>Direct access to Miles</li>
+            <li>Custom skill requests</li>
+            <li>Lifetime rate guarantee</li>
+          </ul>
+          <a href="#" class="btn-primary" style="width:100%; text-align:center;">Join Waitlist</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq-section" style="background: var(--deep-blue);">
+    <div class="container">
+      <div class="section-label" style="text-align:center;">FAQ</div>
+      <h2 class="section-title" style="text-align:center;">Questions? Answers.</h2>
+      <p class="section-sub" style="text-align:center; margin-left:auto; margin-right:auto; margin-bottom: 48px;">Everything you need to know before joining.</p>
+      <amp-accordion animate>
+        <section>
+          <h4>What exactly is a "skill"?</h4>
+          <div class="faq-answer">A skill is a detailed automation playbook that your AI agent (like Claude, GPT, or any OpenClaw-compatible agent) reads and follows step by step. It tells the AI exactly how to perform a complex task -- like producing a video ad -- including which APIs to call, what tools to use, how to handle errors, and when to ask you for approval. Think of it as hiring a specialist, except the specialist is your AI and it works 24/7.</div>
+        </section>
+        <section>
+          <h4>Do I need coding experience?</h4>
+          <div class="faq-answer">No. The skills are written so that AI agents can follow them, not you. You provide inputs (like an audio file and an image), approve outputs along the way, and get a finished product. The AI handles all the technical execution -- ffmpeg commands, API calls, image processing, everything.</div>
+        </section>
+        <section>
+          <h4>What AI agent do I need?</h4>
+          <div class="faq-answer">Dope Skills are designed for OpenClaw agents, but the skill files are standard markdown and can be adapted for Claude Code, Codex, or any agent that reads instruction files. The setup guide covers everything you need to get started.</div>
+        </section>
+        <section>
+          <h4>Are there additional API costs?</h4>
+          <div class="faq-answer">Some skills use external APIs (like Creatify for avatar generation). These have their own costs, which are documented in each skill's setup guide. Many skills use free-tier APIs or run locally with zero cost. The Talking Head B-Roll Video skill, for example, uses Creatify (~$5-10 per video), Gemini (free), and Grok (free).</div>
+        </section>
+        <section>
+          <h4>How often do new skills drop?</h4>
+          <div class="faq-answer">We're actively building new skills based on real production needs and member requests. Expect 1-2 new skills per month. As a member, you get every new skill automatically -- no extra charge.</div>
+        </section>
+        <section>
+          <h4>Can I cancel anytime?</h4>
+          <div class="faq-answer">Monthly members can cancel anytime. Annual members are locked in for the year but get a massive discount and founding member perks that won't be available later.</div>
+        </section>
+        <section>
+          <h4>What if I need a custom skill?</h4>
+          <div class="faq-answer">Annual members can submit custom skill requests. If it's something that benefits the community, we'll build it and add it to the library. If it's highly specific to your business, we can discuss custom development.</div>
+        </section>
+      </amp-accordion>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <div class="container">
+      <h2>Stop Doing It Manually.<br>Start Printing.</h2>
+      <p>Join the waitlist and be first in line when we open the doors.</p>
+      <a href="#" class="btn-primary">Join The Waitlist Now</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Dope Skills. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
