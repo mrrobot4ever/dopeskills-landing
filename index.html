@@ -526,20 +526,21 @@
       cursor: pointer;
       background: none;
       border: none;
+    }
+    .faq-q {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      width: 100%;
     }
-    .faq-section amp-accordion h4::after {
-      content: "\25BE";
-      font-size: 18px;
+    .faq-caret {
       color: var(--silver);
-      transition: transform 0.2s;
+      font-size: 18px;
       flex-shrink: 0;
-      margin-left: auto;
-      padding-left: 16px;
+      margin-left: 16px;
+      transition: transform 0.2s;
     }
-    .faq-section amp-accordion section[expanded] h4::after {
+    amp-accordion section[expanded] .faq-caret {
       transform: rotate(180deg);
     }
     .faq-section amp-accordion .faq-answer {
@@ -906,31 +907,31 @@
       <p class="section-sub" style="text-align:center; margin-left:auto; margin-right:auto; margin-bottom: 48px;">Everything you need to know before joining.</p>
       <amp-accordion animate>
         <section>
-          <h4>What exactly is a "skill"?</h4>
+          <h4><span class="faq-q"><span>What exactly is a "skill"?</span><span class="faq-caret">&#9662;</span></span></h4>
           <div class="faq-answer">A skill is a detailed automation playbook that your AI agent (like Claude, GPT, or any OpenClaw-compatible agent) reads and follows step by step. It tells the AI exactly how to perform a complex task -- like producing a video ad -- including which APIs to call, what tools to use, how to handle errors, and when to ask you for approval. Think of it as hiring a specialist, except the specialist is your AI and it works 24/7.</div>
         </section>
         <section>
-          <h4>Do I need coding experience?</h4>
+          <h4><span class="faq-q"><span>Do I need coding experience?</span><span class="faq-caret">&#9662;</span></span></h4>
           <div class="faq-answer">No. The skills are written so that AI agents can follow them, not you. You provide inputs (like an audio file and an image), approve outputs along the way, and get a finished product. The AI handles all the technical execution -- ffmpeg commands, API calls, image processing, everything.</div>
         </section>
         <section>
-          <h4>What AI agent do I need?</h4>
+          <h4><span class="faq-q"><span>What AI agent do I need?</span><span class="faq-caret">&#9662;</span></span></h4>
           <div class="faq-answer">Dope Skills are designed for OpenClaw agents, but the skill files are standard markdown and can be adapted for Claude Code, Codex, or any agent that reads instruction files. The setup guide covers everything you need to get started.</div>
         </section>
         <section>
-          <h4>Are there additional API costs?</h4>
+          <h4><span class="faq-q"><span>Are there additional API costs?</span><span class="faq-caret">&#9662;</span></span></h4>
           <div class="faq-answer">Some skills use external APIs (like Creatify for avatar generation). These have their own costs, which are documented in each skill's setup guide. Many skills use free-tier APIs or run locally with zero cost. The Talking Head B-Roll Video skill, for example, uses Creatify (~$5-10 per video), Gemini (free), and Grok (free).</div>
         </section>
         <section>
-          <h4>How often do new skills drop?</h4>
+          <h4><span class="faq-q"><span>How often do new skills drop?</span><span class="faq-caret">&#9662;</span></span></h4>
           <div class="faq-answer">We're actively building new skills based on real production needs and member requests. Expect 1-2 new skills per month. As a member, you get every new skill automatically -- no extra charge.</div>
         </section>
         <section>
-          <h4>Can I cancel anytime?</h4>
+          <h4><span class="faq-q"><span>Can I cancel anytime?</span><span class="faq-caret">&#9662;</span></span></h4>
           <div class="faq-answer">Monthly members can cancel anytime. Annual members are locked in for the year but get a massive discount and founding member perks that won't be available later.</div>
         </section>
         <section>
-          <h4>What if I need a custom skill?</h4>
+          <h4><span class="faq-q"><span>What if I need a custom skill?</span><span class="faq-caret">&#9662;</span></span></h4>
           <div class="faq-answer">Annual members can submit custom skill requests. If it's something that benefits the community, we'll build it and add it to the library. If it's highly specific to your business, we can discuss custom development.</div>
         </section>
       </amp-accordion>
